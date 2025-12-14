@@ -1,0 +1,5 @@
+female_age,male_age,bmi,cycle_regular,pcos,smoker_female,smoker_male,amh,fsh,sperm_count_million_ml,sperm_motility_percent,iui_cycle_type,follicle_count,trigger_shot,multiple_pregnancy_risk,ectopic_risk,trisomy21_risk,trisomy18_risk,endometriosis
+28,30,24.5,Regular,No,No,No,2.5,5.0,50,45,Stimulated,2,Yes,No,No,No,No,None
+35,37,25.0,Regular,No,No,No,2.0,6.0,45,40,Stimulated,2,Yes,No,No,No,No,None
+32,34,26.0,Irregular,Yes,No,No,1.5,8.0,40,35,Natural,1,No,Yes,No,No,No,Stage I
+38,40,28.0,Irregular,Yes,No,Yes,1.0,10.0,30,30,Natural,1,No,No,Yes,Yes,No,Stage II

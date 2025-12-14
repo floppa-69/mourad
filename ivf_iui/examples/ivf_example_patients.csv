@@ -1,0 +1,5 @@
+female_age,male_age,bmi,ovarian_reserve,previous_ivf_failures,pcos,endometriosis,amh,fsh,oocytes_retrieved,fertilization_method,embryos_created,embryos_transferred,ohss_risk,multiple_pregnancy_risk,trisomy21_risk,trisomy18_risk,trisomy13_risk,implantation_failure_risk
+28,30,24.0,Normal,0,No,None,3.0,6.0,15,IVF,10,2,No,Yes,No,No,No,No
+30,32,23.5,Normal,0,No,None,3.5,5.5,16,IVF,12,2,Yes,Yes,No,No,No,No
+35,37,25.0,Low,1,No,Stage I,1.5,9.0,8,ICSI,5,2,No,No,No,No,No,Yes
+42,44,26.5,Very Low,2,Yes,Stage II,0.8,12.0,4,ICSI,2,2,No,No,Yes,No,No,Yes
