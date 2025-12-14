@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h2>Pregnancy Batch Results</h2>
+      <p>Samples: {{ n_samples }}</p>
+      <h4>Preview</h4>
+      <div class="table-responsive">{{ preview_html | safe }}</div>
+      <a class="btn btn-primary" href="/download?path={{ csv_path }}">Download full CSV</a>
+      <a class="btn btn-secondary" href="/pregnancy">Back</a>
+    </div>
+  </div>
+{% endblock %}

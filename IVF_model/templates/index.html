@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 class="mb-3">Model Server Home</h1>
+      <p>Available models:</p>
+      <ul>
+        <li><a href="/ivf">IVF embryo quality model</a></li>
+        <li><a href="/pregnancy">Pregnancy anomaly detection model</a></li>
+      </ul>
+      <h4 class="mt-4">Status</h4>
+      <div id="status">
+        <p><strong>IVF model loaded:</strong> {{ 'yes' if ivf_loaded else 'no' }}</p>
+        <p><strong>Pregnancy model loaded:</strong> {{ 'yes' if pregnancy_loaded else 'no' }}</p>
+      </div>
+    </div>
+  </div>
+{% endblock %}

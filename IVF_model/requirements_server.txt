@@ -1,0 +1,5 @@
+flask>=2.2.0
+requests>=2.31.0
+
+# plus the original model requirements
+# numpy, pandas, scikit-learn, joblib, matplotlib, seaborn

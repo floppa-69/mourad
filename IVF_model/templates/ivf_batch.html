@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h2>IVF Batch Results</h2>
+      <ul>
+        <li>Samples: {{ n_samples }}</li>
+        <li>Accuracy: {{ accuracy }}</li>
+        <li>Precision: {{ precision }}</li>
+        <li>Recall: {{ recall }}</li>
+        <li>F1: {{ f1 }}</li>
+        <li>ROC-AUC: {{ roc_auc }}</li>
+      </ul>
+      <h4>Preview</h4>
+      <div class="table-responsive">{{ preview_html | safe }}</div>
+      <a class="btn btn-primary" href="/download?path={{ csv_path }}">Download full CSV</a>
+      <a class="btn btn-secondary" href="/ivf">Back</a>
+    </div>
+  </div>
+{% endblock %}

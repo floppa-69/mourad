@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h1>IVF Embryo Model</h1>
+      <p>Model loaded: <strong>{{ 'Yes' if ivf_ready else 'No' }}</strong></p>
+
+      <h4>Single sample prediction</h4>
+      <form id="predict-form" method="post" action="/ivf/predict">
+        <div class="mb-3">
+          <label class="form-label">Enter feature JSON (form fields supported, leave blank for missing)</label>
+          <textarea name="features" class="form-control" rows="5" placeholder='{"age": 33, "amh_level": 2.1, "reached_blastocyst": 1}'></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Predict</button>
+      </form>
+
+      <hr>
+      <h4>Run batch on test dataset</h4>
+      <form method="post" action="/ivf/run_batch">
+        <button class="btn btn-secondary" type="submit">Run batch and view results</button>
+      </form>
+
+      <hr>
+      <h4>Recent predictions preview</h4>
+      {% if preds_preview %}
+        <div class="table-responsive">{{ preds_preview | safe }}</div>
+        {% if csv_path %}
+          <a class="btn btn-sm btn-outline-primary mt-2" href="/download?path={{ csv_path }}">Download CSV</a>
+        {% endif %}
+      {% else %}
+        <p>No predictions CSV found yet.</p>
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}

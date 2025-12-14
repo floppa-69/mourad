@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h2>IVF Prediction Result</h2>
+      <p><strong>Predicted class:</strong> {{ predicted_class }}</p>
+      <p><strong>Prediction probability:</strong> {{ probability }}</p>
+      <a href="/ivf" class="btn btn-secondary">Back</a>
+    </div>
+  </div>
+{% endblock %}
